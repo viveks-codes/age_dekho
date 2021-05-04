@@ -22,10 +22,10 @@ class MainActivity : AppCompatActivity() {
             finish()
         }
         webView.webViewClient = WebViewClient()
+        webView.loadUrl("age-dekho.herokuapp.com")
         webView.settings.javaScriptEnabled = true
         webView.settings.textZoom = 100
         webView.canGoBack()
-        webView.loadUrl("age-dekho.herokuapp.com")
         swipeRefresh.setOnRefreshListener {
             swipeRefresh.isRefreshing = true
             webView.reload()
