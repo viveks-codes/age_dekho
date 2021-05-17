@@ -1,3 +1,126 @@
 <resources>
     <string name="app_name">Age Dekho</string>
+    <string name="YOB">Year Of Birth</string>
+    <string name="height_text">Height(cms)</string>
+    <string name="female">Female</string>
+    <string name="male">Male</string>
+    <string name="gender_text">Gender :</string>
+    <string name="religion_txt">Religion :</string>
+    <string name="caste_txt">Caste :</string>
+    <string name="mother_tongue_txt">Mother Tongue :</string>
+    <string name="country_txt">Country :</string>
+    <string name="predict_btn">When will i get married?</string>
+    <string name="result_txt">You will get married in %s</string>
+    <string name="errorInFetching">Something Went Wrong</string>
+    <string name="religion_select">Select Religion</string>
+    <string name="internet_not_available">Please,Check Your Internet Connection</string>
+    <string-array name="religions">
+        <item>Christian</item>
+        <item>Hindu</item>
+        <item>Jain</item>
+        <item>Muslim</item>
+        <item>Sikh</item>
+    </string-array>
+    <string-array name="castes">
+        <item>Agarwal</item>
+        <item>Agri</item>
+        <item>Ahom</item>
+        <item>Arora</item>
+        <item>Arya Vysya</item>
+        <item>Baidya</item>
+        <item>Baishnab</item>
+        <item>Baishya</item>
+        <item>Balija</item>
+        <item>Baniya</item>
+        <item>Bhandari</item>
+        <item>Bhatia</item>
+        <item>Billava</item>
+        <item>Brahmin</item>
+        <item>Chowdhary</item>
+        <item>Goud</item>
+        <item>Gursikh</item>
+        <item>Kaibarta</item>
+        <item>Kalita</item>
+        <item>Kamma</item>
+        <item>Kapu</item>
+        <item>Kayastha</item>
+        <item>Khatri</item>
+        <item>Kshatriya</item>
+        <item>Lingayath</item>
+        <item>Marthoma</item>
+        <item>Memon</item>
+        <item>Naidu</item>
+        <item>OBC - Barber/Naayee</item>
+        <item>Panchal</item>
+        <item>Patel</item>
+        <item>Reddy</item>
+        <item>Roman Catholic</item>
+        <item>Ramdasia</item>
+        <item>Roman Catholic</item>
+        <item>Sahu</item>
+        <item>Saini</item>
+        <item>Scheduled Caste (SC)</item>
+        <item>Shwetamber</item>
+        <item>Sindhi-Sakkhar</item>
+        <item>Thakur</item>
+        <item>Vaishnav</item>
+        <item>Valmiki</item>
+        <item>Vanniyar</item>
+        <item>Viswabrahmin</item>
+        <item>Yadava / Golla</item>
+        <item>Other</item>
+    </string-array>
+    <string-array name="motherTongue">
+        <item>Aka</item>
+        <item>Assamese</item>
+        <item>Bengali</item>
+        <item>Bhojpuri</item>
+        <item>Chattisgarhi</item>
+        <item>English</item>
+        <item>Gujarati</item>
+        <item>Haryanavi</item>
+        <item>Hindi</item>
+        <item>Kannada</item>
+        <item>Kashmiri</item>
+        <item>Konkani</item>
+        <item>Kutchi</item>
+        <item>Malayalam</item>
+        <item>Manipuri</item>
+        <item>Marathi</item>
+        <item>Marwari</item>
+        <item>Nepali</item>
+        <item>Odia</item>
+        <item>Other</item>
+        <item>Punjabi</item>
+        <item>Rajasthani</item>
+        <item>Sindhi</item>
+        <item>Tamil</item>
+        <item>Telugu</item>
+        <item>Tulu</item>
+        <item>Urdu</item>
+    </string-array>
+    <string-array name="country">
+        <item>Australia</item>
+        <item>Bahrain</item>
+        <item>Bangladesh</item>
+        <item>Canada</item>
+        <item>Germany</item>
+        <item>India</item>
+        <item>Ireland</item>
+        <item>Kuwait</item>
+        <item>Malaysia</item>
+        <item>Myanmar</item>
+        <item>Netherlands</item>
+        <item>New Zealand</item>
+        <item>Norway</item>
+        <item>Oman</item>
+        <item>Pakistan</item>
+        <item>Philippines</item>
+        <item>Qatar</item>
+        <item>Singapore</item>
+        <item>South Africa</item>
+        <item>USA</item>
+        <item>United Arab Emirates</item>
+        <item>United Kingdom</item>
+    </string-array>
 </resources>
