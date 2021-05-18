@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Age Dekho ML</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- CSS only -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+	
+
+	<script type="text/javascript" src="bootstrap.js"></script>
+	<script type="text/javascript" src="bootstrap.min.js"></script>
+	
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+</head>
+<body>
+<style type="text/css">
+body {
+  font-family: system-ui;
+ 
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+}@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+	/* customizable heart styling */
+	.heart {
+	  color: #800000;
+	  font-size: 2em;
+	  font-family: Arial, sans-serif;
+	  text-shadow: 0 0 5px #ffffff;
+	}
+	
+	
+
+	@-webkit-keyframes hearts-fall{0%{top:-10%}100%{top:100%}}@-webkit-keyframes hearts-shake{0%,100%{-webkit-transform:translateX(0);transform:translateX(0)}50%{-webkit-transform:translateX(80px);transform:translateX(80px)}}@keyframes hearts-fall{0%{top:-10%}100%{top:100%}}@keyframes hearts-shake{0%,100%{transform:translateX(0)}50%{transform:translateX(80px)}}.heart{position:fixed;top:-10%;z-index:9999;-webkit-animation-name:hearts-fall,hearts-shake;animation-duration:10s,3s;-webkit-animation-timing-function:linear,ease-in-out;-webkit-animation-iteration-count:infinite,infinite;-webkit-animation-play-state:running,running;animation-name:hearts-fall,hearts-shake;animation-duration:10s,3s;animation-timing-function:linear,ease-in-out;animation-iteration-count:infinite,infinite;animation-play-state:running,running}.heart:nth-of-type(0){left:1%;-webkit-animation-delay:0s,0s;animation-delay:0s,0s}.heart:nth-of-type(1){left:10%;-webkit-animation-delay:1s,1s;animation-delay:1s,1s}.heart:nth-of-type(2){left:20%;-webkit-animation-delay:6s,.5s;animation-delay:6s,.5s}.heart:nth-of-type(3){left:30%;-webkit-animation-delay:4s,2s;animation-delay:4s,2s}.heart:nth-of-type(4){left:40%;-webkit-animation-delay:2s,2s;animation-delay:2s,2s}.heart:nth-of-type(5){left:50%;-webkit-animation-delay:8s,3s;animation-delay:8s,3s}.heart:nth-of-type(6){left:60%;-webkit-animation-delay:6s,2s;animation-delay:6s,2s}.heart:nth-of-type(7){left:70%;-webkit-animation-delay:2.5s,1s;animation-delay:2.5s,1s}.heart:nth-of-type(8){left:80%;-webkit-animation-delay:1s,0s;animation-delay:1s,0s}.heart:nth-of-type(9){left:90%;-webkit-animation-delay:3s,1.5s;animation-delay:3s,1.5s}.heart:nth-of-type(10){left:25%;-webkit-animation-delay:2s,0s;animation-delay:2s,0s}.heart:nth-of-type(11){left:65%;-webkit-animation-delay:4s,2.5s;animation-delay:4s,2.5s}
+</style>
+	<div class="hearts" aria-hidden="false">
+		
+		<div class ="heart">
+	    &#10084;
+
+		<i class="fas fa-robot"></i>
+	  </div>
+    <div class ="heart">
+      &#10084;
+	  <i class="fas fa-robot"></i>
+    </div>
+    <div class="heart">
+      &#10084;
+	  <i class="fas fa-robot"></i>
+    </div>
+    <div class="heart">
+      &#10084;
+    </div>
+    <div class="heart">
+      &#10084;
+    </div>
+    <div class="heart">
+    &#10084;
+    </div>
+    <div class="heart">
+      &#10084;
+    </div>
+    <div class="heart">
+      &#10084;
+	  <i class="fas fa-robot"></i>
+    </div>
+    <div class="heart">
+      &#10084;
+    </div>
+    <div class="heart">
+      &#10084;
+    </div>
+        <div class="heart">
+      &#10084;
+	  <i class="fas fa-robot"></i>
+    </div>
+    <div class="heart">
+      &#10084;
+	  <i class="fas fa-robot"></i>
+    </div>
+        <div class="heart">
+      &#10084;
+    </div>
+    <div class="heart">
+      &#10084;
+	  <i class="fas fa-robot"></i>
+    </div>
+	<nav class="navbar navbar-light bg-dark text-white">
+		<div class="container-fluid">
+		  <a class="navbar-brand text-white .me-3" href="https://age-dekho.herokuapp.com">
+			<i class="fas fa-robot"></i>
+			Age dekho
+		  </a>
+		  
+		</div>
+	  </nav>
+	<div class="container">
+		<div class="container">
+			<form class="contact100-form validate-form" action="/action_page.php" >
+				<br>
+				<span class="contact100-form-title" style="font-size:2rem;text-align: center;">Marriage Year Predictor</span>
+				<br>
+				<br>
+
+
+
+
+			
+
+				
+
+				<div class="input-group input-group " >
+					<span class="input-group-text">YOB</span>
+					<input type="number" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg"  id="yob" name="yob"  placeholder="Year of Birth (YYYY) ex: 1980">
+					
+				</div>
+				<br>
+				<div class="input-group input-group  " >
+					<span class="input-group-text">Height (Centimeter)</span>
+					<input type="number" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg" id="height_cms" name="height_cms" placeholder="Height (Centimeters) ex: 175">
+					<span class="focus-input100"></span>
+				</div>
+				<br>
+
+	
+
+				<div class="wrap-input100" >
+					<span class="label-input100">Gender</span>
+					<select  class="form-control" aria-label=".form-select-sm example" type="text" id="gender"  name="gender" >
+							<option value="">Select Gender</option>
+							<option value="0">Female</option>
+							<option value="1">Male</option>
+						</select>
+					<span class="focus-input100"></span>
+				</div>
+
+
+
+				<br>
+
+
+				<div class="wrap-input100" style="border-bottom: 0px;" >
+					<span class="label-input100">Religion</span>
+						<select  class="form-select form-select-sm" aria-label=".form-select-sm example" name="religion" type="text" id="religion" >
+							<option value="">Select Religion</option>
+							<option value="0">Christian</option>
+							<option value="1">Hindu</option>
+							<option value="2">Jain</option>
+							<option value="3">Muslim</option>
+							<option value="4">Sikh</option>
+						</select>
+					<span class="focus-input100"></span>
+					<br>
+				</div>
+				<div class="wrap-input100" style="border-bottom: 0px;" >
+					<span class="label-input100">Caste</span>
+						<select class="form-select form-select-sm" aria-label=".form-select-sm example" id="caste" type="text" name="caste" >
+							<option value="">Select Caste</option>
+							<option value="0">Agarwal</option>
+							<option value="1">Agri</option>
+							<option value="2">Ahom</option>
+							<option value="3">Arora</option>
+							<option value="4">Arya Vysya</option>
+							<option value="5">Baidya</option>
+							<option value="6">Baishnab</option>
+							<option value="7">Baishya</option>
+							<option value="8">Balija</option>
+							<option value="9">Baniya</option>
+							<option value="10">Bhandari</option>
+							<option value="11">Bhatia</option>
+							<option value="12">Billava</option>
+							<option value="14">Brahmin</option>
+							<option value="14">Chowdhary</option>
+							<option value="15">Goud</option>
+							<option value="16">Gursikh</option>
+							<option value="17">Kaibarta</option>
+							<option value="18">Kalita</option>
+							<option value="19">Kamma</option>
+							<option value="19">Kapu</option>
+							<option value="19">Kayastha</option>
+							<option value="20">Khatri</option>
+							<option value="21">Kshatriya</option>
+							<option value="22">Lingayath</option>
+							<option value="23">Marthoma</option>
+							<option value="24">Memon</option>
+							<option value="24">Naidu</option>
+							<option value="25">OBC - Barber/Naayee</option>
+							<option value="26">Panchal</option>
+							<option value="27">Patel</option>
+							<option value="28">Reddy</option>
+							<option value="30">Roman Catholic</option>
+							<option value="29">Ramdasia</option>
+							<option value="30">Roman Catholic</option>
+							<option value="31">Sahu</option>
+							<option value="32">Saini</option>
+							<option value="33">Scheduled Caste (SC)</option>
+							<option value="34">Shwetamber</option>
+							<option value="35">Sindhi-Sakkhar</option>
+							<option value="36">Thakur</option>
+							<option value="37">Vaishnav</option>
+							<option value="38">Valmiki</option>
+							<option value="39">Vanniyar</option>
+							<option value="40">Viswabrahmin</option>
+							<option value="41">Yadava / Golla</option>
+							<option value="42">Others Castes</option>
+						</select>
+					<span class="focus-input100"></span>
+				</div>
+				<br>
+				<div class="wrap-input100" style="border-bottom: 0px;" >
+					<span class="label-input100">Mother Tongue</span>
+						<select id="mother_tongue" type="text" class="form-select form-select-sm" aria-label=".form-select-sm example" name="mother_tongue"  >
+							<option value="">Select Mother Tongue</option>
+							<option value="0">Aka</option>
+							<option value="1">Assamese</option>
+							<option value="2">Bengali</option>
+							<option value="3">Bhojpuri</option>
+							<option value="4">Chattisgarhi</option>
+							<option value="5">English</option>
+							<option value="6">Gujarati</option>
+							<option value="7">Haryanavi</option>
+							<option value="8">Hindi</option>
+							<option value="9">Kannada</option>
+							<option value="10">Kashmiri</option>
+							<option value="11">Konkani</option>
+							<option value="12">Kutchi</option>
+							<option value="13">Malayalam</option>
+							<option value="14">Manipuri</option>
+							<option value="15">Marathi</option>
+							<option value="16">Marwari</option>
+							<option value="17">Nepali</option>
+							<option value="18">Odia</option>
+							<option value="19">Other</option>
+							<option value="20">Punjabi</option>
+							<option value="21">Rajasthani</option>
+							<option value="22">Sindhi</option>
+							<option value="23">Tamil</option>
+							<option value="24">Telugu</option>
+							<option value="25">Tulu</option>
+							<option value="26">Urdu</option>
+						</select>
+					<span class="focus-input100"></span>
+				</div>
+				<br>
+				<div class="wrap-input100" style="border-bottom: 0px;" >
+					<span class="label-input100">Country</span>
+						<select class="form-select form-select-sm" aria-label=".form-select-sm example" type="text" id="country" name="country"  >
+							<option value="">Select Country</option>
+							<option value="0">Australia</option>
+							<option value="1">Bahrain</option>
+							<option value="2">Bangladesh</option>
+							<option value="3">Canada</option>
+							<option value="4">Germany</option>
+							<option value="5">India</option>
+							<option value="6">Ireland</option>
+							<option value="7">Kuwait</option>
+							<option value="8">Malaysia</option>
+							<option value="9">Myanmar</option>
+							<option value="10">Netherlands</option>
+							<option value="11">New Zealand</option>
+							<option value="12">Norway</option>
+							<option value="13">Oman</option>
+							<option value="14">Pakistan</option>
+							<option value="15">Philippines</option>
+							<option value="16">Qatar</option>
+							<option value="17">Singapore</option>
+							<option value="18">South Africa</option>
+							<option value="19">USA</option>
+							<option value="20">United Arab Emirates</option>
+							<option value="21">United Kingdom</option>
+						</select>
+					<span class="focus-input100"></span>
+				</div>
+				<br>
+				<div class="container">
+					<div class="col-md-12 text-center">
+						
+						<button type="submit" class="btn btn-primary" id='submit' type="submit" value="Submit">predict</button>
+					</div>
+				<br><br>
+					<h5 class="contact100-form-title"><span class="" style="text-align: center;clear: both;
+						display: inline-block;
+						overflow: hidden;
+						white-space: nowrap;" id="output"  >&nbsp;</span></h5>
+				</div>
+
+				</div>
+				<button class="btn" style="width:100%"><i class="fa fa-download large"></i><a href=""> Download Android app Now</button>
+			</form>
+			<br>
+				<span class="contact100-form-title" style="text-align: center;clear: both;
+				display: inline-block;
+				overflow: hidden;
+				white-space: nowrap;" id="output"  >&nbsp;</span>
+		</div>
+		
+	</div>
+
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script type="text/javascript">
+		
+		$('#submit').click(function(event){    
+		  event.preventDefault(); 
+		  var exist_response = $.ajax({type:"GET",url:"https://age-dekho.herokuapp.com/predict",data:"gender="+$('#gender').val()+"&height_cms="+$('#height_cms').val()+"&caste="+$('#caste').val()+"&religion="+$('#religion').val()+"&mother_tongue="+$('#mother_tongue').val()+"&country="+$('#country').val(),async: false}).responseText;
+		  
+		  $('#output').text("Please Wait");
+		  var exist_response = $.ajax({type:"GET",url:"https://age-dekho.herokuapp.com/predict",data:"gender="+$('#gender').val()+"&height_cms="+$('#height_cms').val()+"&caste="+$('#caste').val()+"&religion="+$('#religion').val()+"&mother_tongue="+$('#mother_tongue').val()+"&country="+$('#country').val(),async: false}).responseText;
+		  
+		  $('#output').text("Please Wait");
+		  var exist_response = $.ajax({type:"GET",url:"https://age-dekho.herokuapp.com/predict",data:"gender="+$('#gender').val()+"&height_cms="+$('#height_cms').val()+"&caste="+$('#caste').val()+"&religion="+$('#religion').val()+"&mother_tongue="+$('#mother_tongue').val()+"&country="+$('#country').val(),async: false}).responseText;
+		  
+		  $('#output').text("Please Wait");
+		  var exist_response = $.ajax({type:"GET",url:"https://age-dekho.herokuapp.com/predict",data:"gender="+$('#gender').val()+"&height_cms="+$('#height_cms').val()+"&caste="+$('#caste').val()+"&religion="+$('#religion').val()+"&mother_tongue="+$('#mother_tongue').val()+"&country="+$('#country').val(),async: false}).responseText;
+		  
+		  $('#output').text("Please Wait");
+		  var exist_response = $.ajax({type:"GET",url:"https://age-dekho.herokuapp.com/predict",data:"gender="+$('#gender').val()+"&height_cms="+$('#height_cms').val()+"&caste="+$('#caste').val()+"&religion="+$('#religion').val()+"&mother_tongue="+$('#mother_tongue').val()+"&country="+$('#country').val(),async: false}).responseText;
+		  
+		  $('#output').text("Please Wait");
+		  var exist_response = $.ajax({type:"GET",url:"https://age-dekho.herokuapp.com/predict",data:"gender="+$('#gender').val()+"&height_cms="+$('#height_cms').val()+"&caste="+$('#caste').val()+"&religion="+$('#religion').val()+"&mother_tongue="+$('#mother_tongue').val()+"&country="+$('#country').val(),async: false}).responseText;
+		  
+		  $('#output').text("Please enter valid entry");
+		  $('#output').text("Your Predicted Year of Marriage : "+ String(parseInt(exist_response.split(".")[0]) + parseInt($('#yob').val())));
+		  
+		});
+
+		
+
+	</script>
+</body>
+</html>
+
+
+
+
