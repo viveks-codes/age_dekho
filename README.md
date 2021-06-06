@@ -10,6 +10,7 @@
 
 But, Whether machine learning can predict any person's year of marriage and uncover a higher probability time frame to marry? Well, The answer is Absolutely Yes! With the help of Data and machine learning our Project can can predict 
 
+
 Data was collected by DataMites over 2567 people which contains features like(gender, height, religion, caste, mother tongue, profession, location, country, age of marriage.) Our project uses Random Forest Regression to predict Your marriage age.
 
 Our project is also available as android app as well as web app.
